@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Advice generator app</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./script.js"></script>
 </head>
 <body>
-  <main>
-    <div class="card-content">
-      <p class="advice">Advice # <span id="advice-num" class="advice"></span></p>
-      <p id="advice-text" class="text"></p>
-      <img src="./images/pattern-divider-desktop.svg" alt="separator" />
-      <span id="circle-advice" class="circle">
-        <img src="./images/icon-dice.svg" alt="icon" />
-      </span>
+  <main class="advice-generator">
+    <div class="advice-generator_output">
+      <span class="advice-generator_advice-number">ADVICE #117</span>
+      <q class="advice-generator_quote">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</q>
+      <picture class="advice-generator_divider">
+        <source media="(min-width: 545px)" 
+        srcset="./images/pattern-divider-desktop.svg" />
+        <img src="./images/pattern-divider-mobile.svg" alt="divider line vector">
+      </picture>
     </div>
+    <button class="advice-generator_btn">
+      <img src="./images/icon-dice.svg" alt="dice icon" class="advice-generator_btn-img" />
+    </button>
   </main>
 </body>
 </html>
